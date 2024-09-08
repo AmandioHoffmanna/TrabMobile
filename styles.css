@@ -1,0 +1,244 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Globais */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: #00a115;
+    padding: 20px 0;
+    border-bottom: 1px solid #000000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 50px; 
+    width: auto; 
+    margin-right: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Estilos Princp */
+.Princp {
+    background: url('https://smastr16.blob.core.windows.net/portaleducacaoambiental/sites/201/2023/06/24.07-1024x1024.jpg') no-repeat center center/cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00e1ff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.Princp-content {
+    max-width: 600px;
+}
+
+.Princp h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #4dff56;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.cta-button:hover {
+    background: rgb(4, 145, 9);
+}
+
+/* Seção de Serviços */
+.servicos {
+    padding: 40px 20px;
+    text-align: center;
+    background: #ffffff;
+    margin-top: 40px;
+}
+
+.servicos h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #000;
+}
+
+.service-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    background: #f9f9f9;
+}
+
+/* Seção Portfólio */
+.portfolio {
+    padding: 40px 20px;
+    background: #ffffff;
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    background: #ffffff;
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    text-align: center;
+}
+
+/* Seção de Contato */
+.contatos {
+    padding: 40px 20px;
+    background: #ffffff;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contatos form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contatos input, .contatos textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+.contatos button {
+    background: #00a115;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.contatos button:hover {
+    background: #0056b3;
+}
+
+/* Rodapé */
+footer {
+    background: #00a115;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #eaeaea;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+footer .social-links a {
+    color: #000000;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        background-color: #00a115;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        border-top: 1px solid #000000;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .bar {
+        height: 4px;
+        width: 25px;
+        background-color: #333;
+        margin: 5px 0;
+    }
+
+    .portfolio-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-item {
+        width: 100%;
+    }
+}
